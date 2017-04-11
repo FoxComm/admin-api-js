@@ -1,8 +1,11 @@
 {
   "name": "@foxcomm/admin-api-js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Javascript Library for interacting with FoxCommerce Admin API",
   "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "https://npm.foxcommerce.com:4873"
+  },
   "scripts": {
     "test": "mocha test",
     "build": "babel src -d lib",
@@ -11,10 +14,15 @@
   },
   "keywords": [
     "foxcommerce",
-    "api"
+    "api",
+    "admin"
   ],
-  "author": "FoxCommerce team",
+  "author": "FoxCommerce Team",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FoxComm/admin-api-js/issues"
+  },
+  "homepage": "https://github.com/FoxComm/admin-api-js#readme",
   "dependencies": {
     "debug": "^2.2.0",
     "jwt-decode": "^2.0.1",
